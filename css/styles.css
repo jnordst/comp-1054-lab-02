@@ -1,0 +1,144 @@
+/* Typography */ 
+
+html {
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+h1, h2, h3 {
+    font-weight: 600; 
+}
+
+p {
+    font-weight: 300; 
+    line-height: 18px; 
+}
+
+
+/* Layout */ 
+
+.wrapper {
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.flex {
+    display:flex;
+    gap: 32px;  
+}
+
+#features > div {
+    flex: 1; 
+}
+
+img {
+    max-height: 300px; 
+    width: auto; 
+}
+
+main section {
+    padding: 60px 20px 0 20px; 
+}
+
+.wrapper,
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2.) Add style to the two HTML tables featured in index.html, including a zebra striped pattern for the playlist table.  Ensure styles added help to enhance the user interface and follow best practices. */
+
+#playlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 20px 0px 20px 0px;
+}
+
+#playlist h2 {
+    text-align: center;
+}
+
+/* Added a border around the table to emphasize the section */
+#playlist table {
+    width: 100%;
+    border: rgb(90, 90, 90) 1px solid;
+    border-radius: 5px;
+}
+
+#playlist tbody tr:nth-child(odd){
+    background-color: rgb(233, 233, 233);
+}
+
+/* 3.) Style the links in the navigation as buttons, utilizing best practices. */
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    background-color: rgb(118, 189, 255);
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+    background-color: rgb(87, 146, 201);
+}
+
+/* 4.) Style any other links contained on the page in order to enhance the design/UI and in accordance with best practices. */
+
+/* Best Practice for styling a typical link is to not style them at all so that viewers can identify that a block of text is a link to an external website */
+
+
+/* 5.) Style the ordered and unordered lists contained on the page in order to enhance the UI and following best practices. */
+
+#features {
+    width: 1200px;
+    margin: 20px 0px 20px 0px;
+}
+
+/* Added backgrounds and borders to help seperate the sections */
+#features div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: rgb(90, 90, 90) 1px solid;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+}
+
+#features h3 {
+    text-align: center;
+}
+
+/* Added musical notes as the list style */
+#features ul {
+    list-style: square;
+    list-style-image: url(../assets/1024px-Simple_Music.png);
+}
+
+/* Changing list style to be roman*/
+#features ol {
+    list-style: lower-roman;
+}
+
+/* Adding extra spacing between the data and header */
+#features div:nth-child(3) tbody th {
+    text-align: start;
+    padding-right: 25px;
+}
+
+#features div:nth-child(3) tbody td {
+    text-align: end;
+    padding-left: 25px;
+}
